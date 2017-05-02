@@ -12,4 +12,6 @@
  Text Domain:  mh-magazine-lite Child
 */
 
-
+.mh-header-text {
+    display: flex;
+}
