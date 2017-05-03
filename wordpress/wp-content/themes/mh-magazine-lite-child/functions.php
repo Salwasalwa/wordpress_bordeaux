@@ -11,6 +11,15 @@ function test_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'test_enqueue_styles' );
 
+// if  (!function_exists('test_mail')) {
+//
+// 	function test_mail () {
+// 		error_log ('hello world !');
+// 		// mail('ruellepetelromain@gmail.com', 'test_mail', 'helle world !');
+// 	}
+// 	add_action ('save_post', 'test_mail');
+// }
+
 if (!function_exists('mh_magazine_lite_custom_header')) {
 	function mh_magazine_lite_custom_header() {
 		echo '<div class="mh-custom-header clearfix">' . "\n";
