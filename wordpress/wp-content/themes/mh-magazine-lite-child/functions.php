@@ -61,10 +61,8 @@ if (!function_exists('mh_magazine_lite_custom_header')) {
                                 echo '<div class ="aheader">';
                                     echo '<a href="#">Quartiers</a>';
                                     echo '<a href="#">Plans</a>';
-
                                 echo '</div>';
                                 echo '<div class ="aheader">';
-
                                     echo '<ul class ="submenu">
                                     <li><a href="#">Aller au contenu |</a></li>
                                     <li><a href="#">Accessibilité | </a></li>
