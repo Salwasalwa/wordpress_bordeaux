@@ -24,6 +24,8 @@ if (!function_exists('mh_magazine_lite_custom_header')) {
 					echo '<div class="mh-site-logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">' . "\n";
 						if (function_exists('the_custom_logo')) {
 							the_custom_logo();
+
+
 						}
 						if (display_header_text()) {
 							if (get_header_textcolor() != get_theme_support('custom-header', 'default-text-color')) {
@@ -54,12 +56,20 @@ if (!function_exists('mh_magazine_lite_custom_header')) {
 									if (get_bloginfo('description')) {
 										echo $header_tagline_before . esc_attr(get_bloginfo('description')) . $header_tagline_after;
 									}
+
 								echo '</a>' . "\n";
-                                echo '<div>';
-                                echo '<a href="#"> Quartiers </a>';
-                                echo '<a href="#"> Quartiers </a>';
+                                echo '<div class ="aheader">';
+                                    echo '<a href="#">Quartiers</a>';
+                                    echo '<a href="#">Plans</a>';
                                 echo '</div>';
-                                get_search_form();
+                                echo '<div class ="aheader">';
+                                    echo '<ul class ="submenu">
+                                    <li><a href="#">Aller au contenu |</a></li>
+                                    <li><a href="#">Accessibilité | </a></li>
+                                    <li><a href="#">Plan du site</a></li>
+                                    </ul>';
+                                    get_search_form();
+                                echo '</div>';
 							echo '</div>' . "\n";
 						}
 

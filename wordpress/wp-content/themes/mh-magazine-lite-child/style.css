@@ -12,6 +12,12 @@
  Text Domain:  mh-magazine-lite Child
 */
 
-.mh-header-text {
+.mh-header-text, .submenu {
     display: flex;
+    justify-content: space-between;
+}
+
+.aheader {
+    display: flex;
+    flex-direction: column;
 }
