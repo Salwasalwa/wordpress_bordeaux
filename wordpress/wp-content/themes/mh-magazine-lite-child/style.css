@@ -12,12 +12,27 @@
  Text Domain:  mh-magazine-lite Child
 */
 
-.mh-header-text, .submenu {
+.mh-header-text, .submenu,  .mh-site-logo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .aheader {
     display: flex;
     flex-direction: column;
+}
+
+.submenu {
+    font-size: 10px;
+}
+
+.submenu a {
+    color:red;
+}
+.aheader {
+    padding: 0 2em;
+}
+
+a{
+    color: rgb(117, 114, 117);
 }
