@@ -28,7 +28,11 @@ define('DB_USER', 'wordpress_bordeaux');
 define('DB_PASSWORD', 'wordpress_bordeaux');
 
 /** Adresse de l’hébergement MySQL. */
+<<<<<<< HEAD
 define('DB_HOST', '192.168.100.137');
+=======
+define('DB_HOST', 'localhost');
+>>>>>>> d0f86682b7fc6440b70f7ce00e89a97ca77e0db5
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8mb4');
