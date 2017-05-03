@@ -2,5 +2,5 @@
 /wp-content/upgrade
 /wp-content/uploads
 /sitemap.*
-/wp-config.php
+wordpress/wp-config.php
 *.sql
