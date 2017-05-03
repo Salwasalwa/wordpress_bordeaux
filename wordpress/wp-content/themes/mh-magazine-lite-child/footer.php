@@ -19,6 +19,15 @@
 			<?php } ?>
 			<?php if (is_active_sidebar('footer-4')) { ?>
 				<div class="mh-col-1-4 mh-widget-col-1 mh-footer-area mh-footer-4">
+					<p>Mairie de Bordeaux</p>
+					<p>Place Pey Berland</p>
+					<p>33000 Bordeaux</p>
+					<p>Adresse postale : </p>
+					<p>Place Pey-Berland</p>
+					<p>33045 Bordeaux Cedex</p></br>
+					<p>Contact</p>
+					<p>Du lundi au vendredi de 8h30 a 18h</p>
+					<p>Tél: 05 56 10 20 30</p></br>
 					<?php dynamic_sidebar('footer-4'); ?>
 				</div>
 			<?php } ?>
