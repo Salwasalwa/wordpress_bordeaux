@@ -19,3 +19,13 @@
 	<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
+
+<!-- $categories = get_categories();
+ foreach ($categories as $category) {
+ $args = array('category'=>"$cat->cat_ID");
+
+     $posts = get_posts($posts);
+     setup_postdata($post);
+     the_title();
+     the_excerpt();
+ } -->
