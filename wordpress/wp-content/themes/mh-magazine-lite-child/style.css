@@ -36,3 +36,6 @@
 a{
     color: rgb(117, 114, 117);
 }
+.section {
+    display: flex;
+}
