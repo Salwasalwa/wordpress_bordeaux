@@ -1,31 +1,30 @@
 <?php get_header(); ?>
-<div class="mh-wrapper clearfix">
-	<div id="main-content" class="mh-loop mh-content" role="main"><?php
-		mh_before_page_content();
-		if (have_posts()) {
-			if (is_home() && !is_front_page()) { ?>
-				<header class="page-header">
-					<h1 class="page-title">
-						<?php single_post_title(); ?>
-					</h1>
-				</header><?php
-			}
-			mh_magazine_lite_loop_layout();
-			mh_magazine_lite_pagination();
-		} else {
-			get_template_part('content', 'none');
-		} ?>
-	</div>
-	<?php get_sidebar(); ?>
-</div>
-<?php get_footer(); ?>
 
-<!-- $categories = get_categories();
- foreach ($categories as $category) {
- $args = array('category'=>"$cat->cat_ID");
 
-     $posts = get_posts($posts);
-     setup_postdata($post);
-     the_title();
-     the_excerpt();
- } -->
+    <h2>Elections</h2>
+    <?php
+
+    $args = array('category_name' => "Elections" );
+    $posts = get_posts($args);
+    get_template_part( 'template-parts/content_loop_post');
+
+    ?>
+
+    <h2>Divers</h2>
+
+    <?php
+    $args = array('category_name' => "Divers" );
+    $posts = get_posts($args);
+    get_template_part( 'template-parts/content_loop_post');
+    ?>
+
+    <h2>Actualités</h2>
+
+    <?php
+    $args = array('category_name' => "Actualités" );
+    $posts = get_posts($args);
+    get_template_part( 'template-parts/content_loop_post');
+    ?>
+
+<?php get_sidebar();
+get_footer(); ?>
