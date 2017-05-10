@@ -38,4 +38,10 @@ a{
 }
 .section {
     display: flex;
+    padding-left: 1em;
+    width: 90%;
+}
+.articles {
+    padding-left: 1em;
+    width: 100%;
 }
